@@ -1,0 +1,23 @@
+.userIconForChatCart {
+    display: grid;
+    place-items: center;
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .noIcon {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 50px;
+            margin: 0;
+        }
+    }
+}

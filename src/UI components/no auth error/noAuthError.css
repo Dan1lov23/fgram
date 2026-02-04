@@ -1,0 +1,9 @@
+.noAuthError {
+    text-align: center;
+    p {
+        font-size: 40px;
+    }
+    .link:hover {
+        text-decoration: underline;
+    }
+}
