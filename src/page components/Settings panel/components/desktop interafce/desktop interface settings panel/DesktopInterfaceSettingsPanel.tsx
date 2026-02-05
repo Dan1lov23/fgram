@@ -1,10 +1,10 @@
 import "./desktopInterfaceSettingsPanel.css";
 
+import {useState} from "react";
+
 import DesktopInterfaceSettingsPanelSidebar from "../desktop interface settings panel sidebar/DesktopInterfaceSettingsPanelSidebar.tsx";
 import DesktopInterfaceUserProfileSettings from "../desktop interface user profile settings/desktop interface user profile settings/DesktopInterfaceUserProfileSettings.tsx";
 import DesktopInterfaceDeleteAccountSettings from "../desktop interface delete account settings/desktop interface delete account settings/DesktopInterfaceDeleteAccountSettings.tsx";
-
-import {useState} from "react";
 
 export default function DesktopInterfaceSettingsPanel() {
 
