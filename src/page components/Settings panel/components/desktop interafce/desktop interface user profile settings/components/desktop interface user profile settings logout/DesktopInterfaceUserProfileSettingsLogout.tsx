@@ -4,7 +4,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
-import {logoutFunction} from "../../../../../../../API/auth API functions/authApiFunctions.ts";
+import {logoutFunction} from "../../../../../../../API/auth API functions/logout function/logoutFunction.ts";
 
 const style = {
     position: 'absolute',

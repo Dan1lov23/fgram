@@ -1,8 +1,8 @@
 import "./loginButton.css";
 
-import {useNavigate} from "react-router-dom";
+import  {useNavigate } from "react-router-dom";
 
-import {loginFunction} from "../../../../API/auth API functions/authApiFunctions.ts";
+import { loginFunction } from "../../../../API/auth API functions/login function/loginFunction.ts";
 
 export default function LoginButton({username, password, setError}:{username:string, password:string, setError: (error:string) => void}) {
 

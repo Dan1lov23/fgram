@@ -2,7 +2,7 @@ import "./registerButton.css";
 
 import {useNavigate} from "react-router-dom";
 
-import {registerFunction} from "../../../../API/auth API functions/authApiFunctions.ts";
+import {registerFunction} from "../../../../API/auth API functions/register function/registerFunction.ts";
 
 export default function RegisterButton({username, email, password, passwordRepeat, error, setError}:{username:string, email:string, password:string, passwordRepeat:string, error:string, setError: (error:string) => void}) {
 

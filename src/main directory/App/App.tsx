@@ -18,7 +18,7 @@ import {setChats} from "../../redux/slices/chats slice/chatsSlice.ts";
 import {setActualChat} from "../../redux/slices/actual chat slice/actualChatSlice.ts";
 
 import { getChatFunction } from "../../API/messages API functions/messagesApiFunctions.ts";
-import { checkSessionFunction } from "../../API/auth API functions/authApiFunctions.ts";
+import {checkSessionFunction} from "../../API/auth API functions/check session function/checkSessionFunction.ts";
 import { getAllUserChats } from "../../API/chats API functions/chatsApiFunctions.ts";
 
 export default function App() {

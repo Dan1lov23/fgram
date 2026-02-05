@@ -2,7 +2,7 @@ import "./confirmAccountButton.css";
 
 import { useNavigate } from "react-router-dom";
 
-import { activateAccount } from "../../../../API/auth API functions/authApiFunctions.ts";
+import { activateAccountFunction } from "../../../../API/auth API functions/activate account function/activateAccountFunction.ts";
 
 export default function ConfirmAccountButton() {
 
@@ -11,7 +11,7 @@ export default function ConfirmAccountButton() {
     return (
         <>
             <div className="confirmAccountButton">
-                <button onClick={() => activateAccount(navigate)}>
+                <button onClick={() =>activateAccountFunction(navigate)}>
                     CONFIRM
                 </button>
             </div>
