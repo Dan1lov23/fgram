@@ -1,0 +1,4 @@
+.desktopInterfaceSettingsPanelSidebar {
+    height: 100vh;
+    border-right: 2px solid var(--text-color);
+}

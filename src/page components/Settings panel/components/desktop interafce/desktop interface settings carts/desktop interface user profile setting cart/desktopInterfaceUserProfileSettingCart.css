@@ -1,0 +1,51 @@
+.desktopInterfaceUserProfileSettingCart {
+    .desktopInterfaceUserProfileSettingCartSelect {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        background-color: var(--primary-color);
+        border-bottom: 2px solid var(--text-color);
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .desktopInterfaceUserProfileSettingCartSelect:hover {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        background-color: var(--primary-color);
+        border-bottom: 2px solid var(--text-color);
+        cursor: pointer;
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .desktopInterfaceUserProfileSettingCartDefault {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        border-bottom: 2px solid var(--text-color);
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .desktopInterfaceUserProfileSettingCartDefault:hover {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        background-color: var(--primary-color);
+        border-bottom: 2px solid var(--text-color);
+        cursor: pointer;
+        p {
+            font-size: 30px;
+        }
+    }
+
+}

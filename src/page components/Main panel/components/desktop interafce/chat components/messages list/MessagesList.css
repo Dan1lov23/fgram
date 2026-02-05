@@ -1,0 +1,5 @@
+.desktopInterfaceMessagesList {
+    height: 75.8vh;
+    border-bottom: 2px solid var(--text-color);
+    overflow-y: auto;
+}

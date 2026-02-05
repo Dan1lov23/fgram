@@ -1,0 +1,51 @@
+.desktopInterfaceDeleteAccountSettingCart {
+    .desktopInterfaceDeleteAccountSettingCartSelect {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        background-color: var(--primary-color);
+        border-bottom: 2px solid var(--text-color);
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .desktopInterfaceDeleteAccountSettingCartSelect:hover {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        background-color: var(--primary-color);
+        border-bottom: 2px solid var(--text-color);
+        cursor: pointer;
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .desktopInterfaceDeleteAccountSettingCartDefault {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        border-bottom: 2px solid var(--text-color);
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .desktopInterfaceDeleteAccountSettingCartDefault:hover {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        background-color: var(--primary-color);
+        border-bottom: 2px solid var(--text-color);
+        cursor: pointer;
+        p {
+            font-size: 30px;
+        }
+    }
+
+}

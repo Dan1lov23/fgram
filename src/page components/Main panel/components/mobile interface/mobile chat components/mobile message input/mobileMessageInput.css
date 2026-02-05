@@ -1,0 +1,12 @@
+.mobileMessageInput {
+    text-align: center;
+    margin-top: 1%;
+    input {
+        width: 300px;
+        height: 35px;
+        color: var(--text-color);
+        border-radius: 10px;
+        border: 1px solid var(--text-color);
+        background-color: var(--background-color);
+    }
+}

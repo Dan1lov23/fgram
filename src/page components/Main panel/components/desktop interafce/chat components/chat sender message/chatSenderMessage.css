@@ -1,0 +1,28 @@
+.chatSenderMessage {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    margin: 40px;
+    justify-items: left;
+    .senderMessage {
+        min-width: 30px;
+        max-width: 600px;
+        width: auto;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--primary-color);
+        align-items: flex-start;
+    }
+    .senderMessage {
+        background-color: var(--primary-color);
+        p {
+            font-size: 30px;
+            margin: 10px;
+            max-width: calc(100% - 20px);
+            white-space: normal;
+            word-wrap: break-word;
+        }
+    }
+}

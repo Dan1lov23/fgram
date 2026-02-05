@@ -1,0 +1,25 @@
+.desktopInterfaceUserProfileSettingsChangeAvatar {
+    .inputButtonAndAvatar {
+        display: grid;
+        input {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            margin-top: 30px;
+            width: 310px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition: 0.4s;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            border: 1px solid var(--text-color);
+        }
+        button:hover {
+            color: var(--background-color);
+            border: 1px solid var(--background-color);
+            background-color: var(--primary-color);
+        }
+    }
+}

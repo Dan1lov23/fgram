@@ -1,0 +1,24 @@
+.usernameLoginInput {
+    text-align: center;
+    .inputWrapper {
+        position: relative;
+        display: inline-block;
+        input {
+            width: 260px;
+            height: 35px;
+            color: var(--text-color);
+            border-radius: 10px;
+            border: 1px solid var(--text-color);
+            background-color: var(--background-color);
+        }
+        input:hover {
+            cursor: pointer;
+        }
+        .icon-user {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

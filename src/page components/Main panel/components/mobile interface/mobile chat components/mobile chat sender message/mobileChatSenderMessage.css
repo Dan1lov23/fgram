@@ -1,0 +1,24 @@
+.mobileChatSenderMessage {
+    display: grid;
+    margin: 20px;
+    justify-items: right;
+    .senderMessage {
+        min-width: 30px;
+        max-width: 300px;
+        width: auto;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--primary-color);
+        align-items: flex-start;
+    }
+    p {
+        font-size: 20px;
+        margin: 10px;
+        max-width: calc(100% - 20px);
+        white-space: normal;
+        word-wrap: break-word;
+    }
+}

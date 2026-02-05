@@ -1,0 +1,6 @@
+.chatHeaderBackButton {
+    p {
+        font-size: 30px;
+        color: var(--text-color);
+    }
+}

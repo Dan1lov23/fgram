@@ -1,0 +1,9 @@
+.searchButton {
+    text-align: right;
+    display: inline-block;
+    p {
+        margin-right: 30%;
+        font-size: 35px;
+        color: var(--text-color);
+    }
+}

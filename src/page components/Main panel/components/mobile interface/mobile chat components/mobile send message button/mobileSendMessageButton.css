@@ -1,0 +1,18 @@
+.mobileSendMessageButton {
+    margin: 4px;
+    button {
+        width: 40px;
+        height: 40px;
+        background-color: var(--background-color);
+        border: 1px solid var(--text-color);
+        border-radius: 10px;
+        color: var(--text-color);
+        font-size: 20px;
+        transition: 0.4s;
+    }
+    button:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+        cursor: pointer;
+    }
+}

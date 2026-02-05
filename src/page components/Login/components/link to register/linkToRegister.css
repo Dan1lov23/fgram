@@ -1,0 +1,10 @@
+.linkToRegister {
+    margin-top: 10%;
+    text-align: center;
+    p {
+        font-size: 21px;
+    }
+    p:hover {
+        text-decoration: underline;
+    }
+}

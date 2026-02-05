@@ -1,0 +1,19 @@
+.settingsPanel {
+    .settingsPanelDesktop {
+        display: block;
+    }
+    .settingsPanelMobile {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .settingsPanel {
+        .settingsPanelDesktop {
+            display: none;
+        }
+        .settingsPanelMobile {
+            display: block;
+        }
+    }
+}

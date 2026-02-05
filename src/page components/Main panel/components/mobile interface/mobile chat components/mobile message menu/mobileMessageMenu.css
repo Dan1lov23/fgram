@@ -1,0 +1,9 @@
+.mobileMessageMenu {
+    width: 50px;
+    p {
+        text-align: center;
+    }
+    p:hover {
+        cursor: pointer;
+    }
+}

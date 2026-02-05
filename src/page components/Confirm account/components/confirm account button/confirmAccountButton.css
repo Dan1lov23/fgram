@@ -1,0 +1,18 @@
+.confirmAccountButton {
+    text-align: center;
+    button {
+        width: 345px;
+        height: 40px;
+        background-color: #72d82d;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: 0.4s;
+    }
+    button:hover {
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 100px 11px rgba(112, 255, 10, 0.83);
+        -moz-box-shadow: 0px 0px 100px 11px rgba(112, 255, 10, 0.83);
+        box-shadow: 0px 0px 100px 11px rgba(112, 255, 10, 0.83);
+    }
+}

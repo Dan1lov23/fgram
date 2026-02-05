@@ -1,0 +1,10 @@
+.mobileInterfaceProfileSettingBackPanel {
+    display: grid;
+    height: 10vh;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 2px solid var(--text-color);
+    p {
+        display: inline-block;
+    }
+}

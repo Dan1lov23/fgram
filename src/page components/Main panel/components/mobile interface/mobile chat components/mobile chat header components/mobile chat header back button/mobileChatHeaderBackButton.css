@@ -1,0 +1,7 @@
+.mobileChatHeaderBackButton {
+    p {
+        margin-left: -15%;
+        font-size: 40px;
+        color: var(--text-color);
+    }
+}

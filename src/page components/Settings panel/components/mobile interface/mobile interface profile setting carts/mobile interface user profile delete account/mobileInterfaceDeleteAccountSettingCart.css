@@ -1,0 +1,12 @@
+.mobileInterfaceDeleteAccountSettingCart {
+    .mobileInterfaceDeleteAccountSettingCart {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        transition: 0.4s;
+        border-bottom: 2px solid var(--text-color);
+        p {
+            font-size: 30px;
+        }
+    }
+}

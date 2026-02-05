@@ -1,0 +1,19 @@
+.activeChatPanel {
+    width: 100%;
+    height: 10vh;
+    transition: 0.4s;
+    text-align: center;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    p {
+        font-size: 27px;
+    }
+}
+
+.activeChatPanel:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,5 @@
+.mobileMessagesList {
+    height: 75vh;
+    border-bottom: 2px solid var(--text-color);
+    overflow-y: auto;
+}

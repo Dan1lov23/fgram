@@ -1,0 +1,14 @@
+.chatMessage {
+    .chatMessageSenderType {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        justify-content: right;
+    }
+    .chatMessageRecipientType {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        justify-content: left;
+    }
+}

@@ -1,0 +1,20 @@
+.mainPanel {
+    .mobileInterface {
+        display: none;
+    }
+    .desktopInterface {
+        display: block;
+    }
+}
+
+@media(max-width: 768px) {
+    .mainPanel {
+        .mobileInterface {
+            display: block;
+        }
+        .desktopInterface {
+            display: none;
+        }
+    }
+
+}

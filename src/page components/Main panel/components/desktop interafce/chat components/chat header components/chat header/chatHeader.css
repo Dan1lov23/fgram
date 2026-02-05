@@ -1,0 +1,7 @@
+.chatHeader {
+    display: grid;
+    place-items: center;
+    height: 11vh;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 2px solid var(--text-color);
+}
