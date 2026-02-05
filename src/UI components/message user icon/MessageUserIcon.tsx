@@ -1,6 +1,6 @@
 import "./messageUserIcon.css";
 
-export default function MessageUserIcon({iconSrc}:{iconSrc:any}) {
+export default function MessageUserIcon({iconSrc}:{iconSrc:string}) {
     return (
         <>
             <div className="messageUserIcon">

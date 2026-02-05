@@ -5,7 +5,7 @@ import {useDispatch} from "react-redux";
 import {setIsOpenChat} from "../../../../../../redux/slices/is open chat slice/isOpenChatSlice.ts";
 import {setActualChat} from "../../../../../../redux/slices/actual chat slice/actualChatSlice.ts";
 
-import {getChatFunction} from "../../../../../../API/messages API functions/messagesApiFunctions.ts";
+import {getChatFunction} from "../../../../../../API/chats API functions/get chat function/getChatFunction.ts";
 
 export default function MobileSearchedUser({username}:{username:string}) {
 

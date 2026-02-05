@@ -1,6 +1,6 @@
 import "./mobileSearchInput.css";
 
-import {searchUserFunction} from "../../../../../../API/search API functions/searchApiFunctions.ts";
+import {searchUserFunction} from "../../../../../../API/search API functions/search user function/searchUserFunctions.ts";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";

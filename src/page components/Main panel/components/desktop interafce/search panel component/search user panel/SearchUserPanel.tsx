@@ -2,7 +2,7 @@ import "./searchUserPanel.css";
 
 import {useDispatch} from "react-redux";
 
-import {getChatFunction} from "../../../../../../API/messages API functions/messagesApiFunctions.ts";
+import {getChatFunction} from "../../../../../../API/chats API functions/get chat function/getChatFunction.ts";
 
 import {setActualChat} from "../../../../../../redux/slices/actual chat slice/actualChatSlice.ts";
 import {setIsOpenChat} from "../../../../../../redux/slices/is open chat slice/isOpenChatSlice.ts";

@@ -17,9 +17,9 @@ import ConfirmAccount from "../../page components/Confirm account/page/ConfirmAc
 import {setChats} from "../../redux/slices/chats slice/chatsSlice.ts";
 import {setActualChat} from "../../redux/slices/actual chat slice/actualChatSlice.ts";
 
-import { getChatFunction } from "../../API/messages API functions/messagesApiFunctions.ts";
+import {getChatFunction} from "../../API/chats API functions/get chat function/getChatFunction.ts";
 import {checkSessionFunction} from "../../API/auth API functions/check session function/checkSessionFunction.ts";
-import { getAllUserChats } from "../../API/chats API functions/chatsApiFunctions.ts";
+import {getAllChatsFunction} from "../../API/chats API functions/get all chats function/getAllChatsFunction.ts";
 
 export default function App() {
 
@@ -42,7 +42,7 @@ export default function App() {
             const messages = await getChatFunction(localStorage.getItem("username"), localStorage.getItem("companion"));
             dispatch(setActualChat(messages));
 
-            const chats = await getAllUserChats(localStorage.getItem("username"));
+            const chats = await getAllChatsFunction(localStorage.getItem("username"));
             dispatch(setChats(chats));
 
         }, 500);

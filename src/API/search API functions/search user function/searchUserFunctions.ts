@@ -24,4 +24,4 @@ async function searchUserFunction(username:string, setSearchedUser: (user:any) =
 
 }
 
-export {searchUserFunction};
+export { searchUserFunction };

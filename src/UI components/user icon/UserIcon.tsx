@@ -1,6 +1,6 @@
 import "./userIcon.css";
 
-export default function UserIcon({userIconSrc}:{userIconSrc:any}) {
+export default function UserIcon({userIconSrc}:{userIconSrc:string}) {
 
 
     return (

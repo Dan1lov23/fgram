@@ -1,21 +1,19 @@
-async function getAllUserChats(username:string | null) {
-
-    const response = await fetch("http://localhost:3000/api/chats/getAllUserChats", {
-        method: "POST",
+async function getAllChatsFunction(username: string | null) {
+    const res = await fetch('http://localhost:3000/api/chats/getAllUserChats', {
+        method: 'POST',
         headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify({username: username})
     })
 
-    const data = await response.json();
+    const data = await res.json();
 
-    if (response.status === 201) {
+    if (res.status === 201) {
+        console.log(data.chats);
         return data.chats;
     }
 
-    return "no chats";
-
 }
 
-export {getAllUserChats};
+export { getAllChatsFunction };
