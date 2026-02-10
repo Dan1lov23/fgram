@@ -9,7 +9,7 @@ import {useDispatch} from "react-redux";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTrash} from "@fortawesome/free-solid-svg-icons";
 
-import {deleteAllMessagesInChatFunction} from "../../../../../../../API/messages API functions/messagesApiFunctions.ts";
+import {deleteAllMessagesInChatFunction} from "../../../../../../../API/messages API functions/delte all messages in chat function/deleteAllMessagesInChatFunction.ts";
 
 import {setIsOpenChat} from "../../../../../../../redux/slices/is open chat slice/isOpenChatSlice.ts";
 

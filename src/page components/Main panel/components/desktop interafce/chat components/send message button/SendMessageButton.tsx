@@ -3,7 +3,7 @@ import "./sendMessageButton.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
-import {sendMessageFunction} from "../../../../../../API/messages API functions/messagesApiFunctions.ts";
+import {sendMessageFunction} from "../../../../../../API/messages API functions/send message function/sendMessageFunction.ts";
 
 export default function SendMessageButton({message, setMessage}:{message:string, setMessage: (message:string) => void}) {
     return (

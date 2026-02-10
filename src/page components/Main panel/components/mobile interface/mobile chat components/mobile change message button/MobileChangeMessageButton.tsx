@@ -8,7 +8,7 @@ import {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPencil} from "@fortawesome/free-solid-svg-icons";
 
-import {updateMessageFunction} from "../../../../../../API/messages API functions/messagesApiFunctions.ts";
+import {updateMessageFunction} from "../../../../../../API/messages API functions/update message function/updateMessageFunction.ts";
 
 const style = {
     position: 'absolute',
