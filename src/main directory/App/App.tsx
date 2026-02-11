@@ -20,13 +20,13 @@ import {setActualChat} from "../../redux/slices/actual chat slice/actualChatSlic
 import {getChatFunction} from "../../API/chats API functions/get chat function/getChatFunction.ts";
 import {checkSessionFunction} from "../../API/auth API functions/check session function/checkSessionFunction.ts";
 import {getAllChatsFunction} from "../../API/chats API functions/get all chats function/getAllChatsFunction.ts";
-
+`s`
 export default function App() {
 
     const dispatch = useDispatch();
 
-    const [sessionCheckMarker, setSessionCheckMarker] = useState(false);
     const [checked, setChecked] = useState(false);
+    const [sessionCheckMarker, setSessionCheckMarker] = useState(false);
 
     useEffect(() => {
         checkSessionFunction(localStorage.getItem("username"), localStorage.getItem("token"), (result) => {
@@ -59,7 +59,14 @@ export default function App() {
                 <Routes>
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/confirmAccount/:username" element={<ConfirmAccount />} />
+                    <Route path="/confirmAccount/:username"
+                           element={
+                                sessionCheckMarker ? (
+                                    <ConfirmAccount/>
+                                ) : (
+                                    <NoAuthError />
+                                )
+                           } />
                     <Route path="/"
                         element={
                             sessionCheckMarker ? (
