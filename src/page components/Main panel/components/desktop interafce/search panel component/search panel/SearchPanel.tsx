@@ -29,7 +29,7 @@ export default function SearchPanel() {
                     <div></div>
                 ) : checkInclude(searchedUser) ? (
                     <div></div>
-                ) : searchedUser === "User not found" ? (
+                ) : searchedUser === "SearchedUser not found" ? (
                     <SearchUserError/>
                 ) : searchedUser === "0Len" ? (
                    <div></div>

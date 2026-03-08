@@ -11,7 +11,7 @@ export default function ConfirmAccountButton() {
     return (
         <>
             <div className="confirmAccountButton">
-                <button onClick={() =>activateAccountFunction(navigate)}>
+                <button onClick={() => activateAccountFunction(navigate)}>
                     CONFIRM
                 </button>
             </div>

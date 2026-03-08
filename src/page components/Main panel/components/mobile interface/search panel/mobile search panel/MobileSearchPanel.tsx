@@ -23,7 +23,7 @@ export default function MobileSearchPanel({searchedUser}:{searchedUser:any}) {
                     <div></div>
                 ) : checkInclude(searchedUser) ? (
                     <div></div>
-                ) : searchedUser === "User not found" ? (
+                ) : searchedUser === "SearchedUser not found" ? (
                     <SearchUserError/>
                 ) : searchedUser === "0Len" ? (
                     <div></div>

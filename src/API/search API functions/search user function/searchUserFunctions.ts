@@ -19,7 +19,7 @@ async function searchUserFunction(username:string, setSearchedUser: (user:any) =
         setSearchedUser(data.user);
         localStorage.setItem("userForSearch", username);
     } else {
-        setSearchedUser("User not found")
+        setSearchedUser("SearchedUser not found")
     }
 
 }

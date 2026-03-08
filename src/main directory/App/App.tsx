@@ -16,11 +16,10 @@ import ConfirmAccount from "../../page components/Confirm account/page/ConfirmAc
 
 import {setChats} from "../../redux/slices/chats slice/chatsSlice.ts";
 import {setActualChat} from "../../redux/slices/actual chat slice/actualChatSlice.ts";
-
 import {getChatFunction} from "../../API/chats API functions/get chat function/getChatFunction.ts";
 import {checkSessionFunction} from "../../API/auth API functions/check session function/checkSessionFunction.ts";
 import {getAllChatsFunction} from "../../API/chats API functions/get all chats function/getAllChatsFunction.ts";
-`s`
+
 export default function App() {
 
     const dispatch = useDispatch();

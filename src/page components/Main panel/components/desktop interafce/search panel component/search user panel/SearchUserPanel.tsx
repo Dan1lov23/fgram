@@ -9,7 +9,9 @@ import {setIsOpenChat} from "../../../../../../redux/slices/is open chat slice/i
 
 import UserIconForChatCart from "../../../../../../UI components/user icon for chat cart/UserIconForChatCart.tsx";
 
-export default function SearchUserPanel({searchUser}:{searchUser:any}) {
+import type SearchedUser from "../../../../../../Interfaces/searched user/searchedUser.ts";
+
+export default function SearchUserPanel({searchUser}:{searchUser:SearchedUser}) {
 
     const dispatch = useDispatch();
 
