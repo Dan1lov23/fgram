@@ -14,11 +14,11 @@ import SettingsPanel from "../../page components/Settings panel/page/SettingsPan
 import ChangePassword from "../../page components/Change password/page/ChangePassword.tsx";
 import ConfirmAccount from "../../page components/Confirm account/page/ConfirmAccount.tsx";
 
-import {setChats} from "../../redux/slices/chats slice/chatsSlice.ts";
-import {setActualChat} from "../../redux/slices/actual chat slice/actualChatSlice.ts";
-import {getChatFunction} from "../../API/chats API functions/get chat function/getChatFunction.ts";
-import {checkSessionFunction} from "../../API/auth API functions/check session function/checkSessionFunction.ts";
-import {getAllChatsFunction} from "../../API/chats API functions/get all chats function/getAllChatsFunction.ts";
+import { setChats } from "../../redux/slices/chats slice/chatsSlice.ts";
+import { setActualChat } from "../../redux/slices/actual chat slice/actualChatSlice.ts";
+import { getChatFunction } from "../../API/chats API functions/get chat function/getChatFunction.ts";
+import { checkSessionFunction } from "../../API/auth API functions/check session function/checkSessionFunction.ts";
+import { getAllChatsFunction } from "../../API/chats API functions/get all chats function/getAllChatsFunction.ts";
 
 export default function App() {
 
@@ -32,20 +32,41 @@ export default function App() {
             setSessionCheckMarker(result);
             setChecked(true);
         });
-
+        localStorage.setItem("actualChatStorage", "");
     }, [])
 
     useEffect(() => {
         const intervalId = setInterval(async () => {
 
             const messages = await getChatFunction(localStorage.getItem("username"), localStorage.getItem("companion"));
-            dispatch(setActualChat(messages));
+
+            const actualChatsStorageStored:any | null = localStorage.getItem("actualChatsStorageStored");
+            const actualChatStorage = JSON.parse(actualChatsStorageStored);
+
+            // console.log(actualChatStorage, messages);
+
+            if (JSON.stringify(actualChatStorage) !== JSON.stringify(messages)) {
+            
+                dispatch(setActualChat(messages));
+
+                localStorage.setItem("actualChatsStorageStored", JSON.stringify(messages));
+
+            }
 
             const chats = await getAllChatsFunction(localStorage.getItem("username"));
             dispatch(setChats(chats));
 
+        
         }, 500);
         return () => clearInterval(intervalId);
+    }, []);
+
+    useEffect(() => {
+        async function firstGeneration() {
+            const messages = await getChatFunction(localStorage.getItem("username"), localStorage.getItem("companion"));
+            dispatch(setActualChat(messages));
+        }
+        firstGeneration();
     }, []);
 
     if (!checked) {
