@@ -1,12 +1,12 @@
 import "./MessagesList.css";
 
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
-import {useEffect} from "react";
-
-import {useRef} from "react";
+import { useEffect, useRef } from "react";
 
 import ChatMessage from "../chat message/ChatMessage.tsx";
+
+import { sendMessageFunction } from "../../../../../../API/messages API functions/send message function/sendMessageFunction.ts";
 
 export default function MessagesList() {
 
@@ -22,7 +22,7 @@ export default function MessagesList() {
 
     useEffect(() => {
         scrollToBottom();
-    }, [actualChat]);
+    }, [sendMessageFunction]);
 
     return (
         <>

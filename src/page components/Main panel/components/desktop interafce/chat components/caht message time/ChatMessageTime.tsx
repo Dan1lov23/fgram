@@ -2,7 +2,7 @@ import "./chatMessageTime.css";
 
 import { useState, useEffect } from 'react'
 
-import {formatTime} from "../../../../../../Other functions/convert time function/ConvertTimeFunction.ts";
+import { formatTime } from "../../../../../../Other functions/convert time function/ConvertTimeFunction.ts";
 
 export default function ChatMessageTime({ chatMessageTime }: { chatMessageTime: number }) {
 

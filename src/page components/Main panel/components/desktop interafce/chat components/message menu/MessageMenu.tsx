@@ -8,8 +8,8 @@ import DeleteMessageButton from "../delete message button/DeleteMessageButton.ts
 import CopyMessageButton from "../copy message button/CopyMessageButton.tsx";
 import ChangeMessageButton from "../change message button/ChangeMessageButton.tsx";
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCircleInfo} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 export default function MessageMenu({messageSender, messageText, messageId}:{messageSender:string, messageText:string, messageId:number}) {
     const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);

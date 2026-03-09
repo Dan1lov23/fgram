@@ -1,4 +1,4 @@
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 import ChatHeader from "../chat header components/chat header/ChatHeader.tsx";
 import DesktopInterfaceMessagesList from "../messages list/MessagesList.tsx";

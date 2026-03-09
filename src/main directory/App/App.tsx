@@ -43,8 +43,6 @@ export default function App() {
             const actualChatsStorageStored:any | null = localStorage.getItem("actualChatsStorageStored");
             const actualChatStorage = JSON.parse(actualChatsStorageStored);
 
-            // console.log(actualChatStorage, messages);
-
             if (JSON.stringify(actualChatStorage) !== JSON.stringify(messages)) {
             
                 dispatch(setActualChat(messages));

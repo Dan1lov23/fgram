@@ -1,6 +1,6 @@
 import "./changePasswordContainer.css";
 
-import {useState} from "react";
+import { useState } from "react";
 
 import ChangePasswordTitle from "../change passwords title/ChangePasswordTitle.tsx";
 import ChangePasswordPasswordsInputs from "../change passwords passwords inputs/ChangePasswordPasswrodsInputs.tsx";

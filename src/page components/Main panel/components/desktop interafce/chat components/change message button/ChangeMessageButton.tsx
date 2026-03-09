@@ -1,12 +1,12 @@
 import "./changeMessageButton.css";
 
-import {useState} from "react";
+import { useState } from "react";
 
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPencil} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
 
 import { updateMessageFunction } from "../../../../../../API/messages API functions/update message function/updateMessageFunction.ts";
 

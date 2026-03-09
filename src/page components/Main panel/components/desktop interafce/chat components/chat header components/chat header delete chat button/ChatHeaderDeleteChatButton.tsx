@@ -4,14 +4,14 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faTrash} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
-import {deleteAllMessagesInChatFunction} from "../../../../../../../API/messages API functions/delte all messages in chat function/deleteAllMessagesInChatFunction.ts";
+import { deleteAllMessagesInChatFunction } from "../../../../../../../API/messages API functions/delte all messages in chat function/deleteAllMessagesInChatFunction.ts";
 
-import {setIsOpenChat} from "../../../../../../../redux/slices/is open chat slice/isOpenChatSlice.ts";
+import { setIsOpenChat } from "../../../../../../../redux/slices/is open chat slice/isOpenChatSlice.ts";
 
 const style = {
     position: 'absolute',

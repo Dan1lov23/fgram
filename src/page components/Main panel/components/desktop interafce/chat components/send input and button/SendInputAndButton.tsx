@@ -1,6 +1,6 @@
 import "./sendInputAndMessageButton.css";
 
-import {useState} from "react";
+import { useState } from "react";
 
 import MessageInput from "../message input/MessageInput.tsx";
 import SendMessageButton from "../send message button/SendMessageButton.tsx";

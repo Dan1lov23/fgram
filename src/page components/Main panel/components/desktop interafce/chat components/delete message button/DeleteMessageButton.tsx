@@ -4,10 +4,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faTrash} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
-import {deleteMessageFunction} from "../../../../../../API/messages API functions/delete message function/deleteMessageFunction.ts";
+import { deleteMessageFunction } from "../../../../../../API/messages API functions/delete message function/deleteMessageFunction.ts";
 
 const style = {
     position: 'absolute',
