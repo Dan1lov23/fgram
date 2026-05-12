@@ -8,7 +8,7 @@ export default function PasswordLoginInput({setPassword}:{setPassword: (password
         <>
             <div className="passwordLoginInput">
                 <div className="inputWrapper">
-                    <input onChange={(e) => setPassword(e.target.value)} placeholder=" Enter password"/>
+                    <input onChange={(e) => setPassword(e.target.value)} placeholder=" Enter password" type="password"/>
                     <FontAwesomeIcon icon={faLock} className="icon-user" fontSize="20px" color="white"/>
                 </div>
             </div>

@@ -1,12 +1,12 @@
 .chatHeader {
     display: grid;
     place-items: center;
-    height: 9.4vh;
+    height: 10.9vh;
     grid-template-columns: repeat(2, 1fr);
     border-bottom: 2px solid var(--text-color);
 }
 
-@media(max-width: 2560px) {
+@media(min-width: 2560px) {
     .chatHeader {
         display: grid;
         place-items: center;

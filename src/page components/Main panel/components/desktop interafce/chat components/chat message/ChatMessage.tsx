@@ -15,6 +15,7 @@ export default function ChatMessage({messageCreator, chatMessage, messageTime, m
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5}}
                 >
+
                     {messageCreator === localStorage.getItem("username") ? (
                         <div className="chatMessageSenderType">
                             <MessageUserIcon iconSrc={localStorage.getItem("iconSrc")}/>

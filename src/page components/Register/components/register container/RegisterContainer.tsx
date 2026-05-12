@@ -8,6 +8,7 @@ import RegisterPasswordInput from "../register password input/RegisterPasswordIn
 import RegisterRepeatPasswordInput from "../register repeat password input/RegisterRepeatPasswordInput.tsx";
 import RegisterButton from "../register button/RegisterButton.tsx";
 import RegisterError from "../register error/RegisterError.tsx";
+import LinkToLogin from "../link to login/LinkToLogin.tsx";
 import RegisterEmailInput from "../register email input/RegisterEmailInput.tsx";
 
 export default function RegisterContainer() {
@@ -26,7 +27,8 @@ export default function RegisterContainer() {
                 <RegisterEmailInput setEmail={setEmail}/>
                 <RegisterPasswordInput setPassword={setPassword}/>
                 <RegisterRepeatPasswordInput setRepeatPassword={setRepeatPassword}/>
-                <RegisterButton username={username} password={password} email={email} passwordRepeat={repeatPassword} error={error}  setError={setError}/>
+                <LinkToLogin/>
+                <RegisterButton username={username} password={password} email={email} passwordRepeat={repeatPassword} error={error} setError={setError}/>
                 {error.length > 0 ? (
                     <RegisterError error={error}/>
                 ) : (

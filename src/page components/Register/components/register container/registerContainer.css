@@ -1,6 +1,6 @@
 .registerContainer {
     width: 400px;
-    height: 600px;
+    height: 660px;
     border-radius: 10px;
     border: 2px solid var(--text-color);
 }

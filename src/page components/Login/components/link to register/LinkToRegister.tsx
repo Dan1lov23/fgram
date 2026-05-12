@@ -7,7 +7,7 @@ export default function LinkToRegister() {
         <>
             <div className="linkToRegister">
                 <Link to="/register">
-                    <p>Have an account? Register</p>
+                    <p>Don't have an account? Register</p>
                 </Link>
             </div>
         </>

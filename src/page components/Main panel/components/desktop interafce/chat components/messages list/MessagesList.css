@@ -1,10 +1,10 @@
 .desktopInterfaceMessagesList {
-    height: 77.3vh;
+    height: 75.8vh;
     border-bottom: 2px solid var(--text-color);
     overflow-y: auto;
 }
-
-@media(max-width: 2560px) {
+h
+@media(min-width: 2560px) {
     .desktopInterfaceMessagesList {
         height: 80.2vh;
         border-bottom: 2px solid var(--text-color);

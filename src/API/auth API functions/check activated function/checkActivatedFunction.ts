@@ -14,8 +14,6 @@ async function checkActivatedFunction() {
         return false;
     }
 
-    return false;
-
 }
 
 export { checkActivatedFunction };
